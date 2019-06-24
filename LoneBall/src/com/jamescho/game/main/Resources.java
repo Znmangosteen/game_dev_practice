@@ -3,6 +3,7 @@ package com.jamescho.game.main;
 import javax.imageio.ImageIO;
 import java.applet.Applet;
 import java.applet.AudioClip;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
@@ -11,10 +12,20 @@ public class Resources {
     public static final String AUDIO_PATH = "/resources/";
     public static final String IMG_PATH = "/resources/";
 
-    public static BufferedImage welcome, iconimage;
+    public static BufferedImage welcome, iconimage, line;
+
+    public static AudioClip hit, bounce;
+
+    public static Color darkBlue, darkRed;
     public static void load() {
         welcome = loadImage("welcome.png");
         iconimage = loadImage("iconimage.png");
+        line = loadImage("line.png");
+        hit = loadSound("hit.wav");
+        bounce = loadSound("bounce.wav");
+
+        darkBlue = new Color(25, 83, 105);
+        darkRed = new Color(105, 13, 13);
     }
 
     public static AudioClip loadSound(String filename) {
