@@ -35,7 +35,9 @@ public class LoadState extends State {
     }
 
     @Override
-    public void OnKeyRelease(KeyEvent event) {
+    public void onKeyRelease(KeyEvent event) {
 
     }
+
+
 }
