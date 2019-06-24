@@ -17,7 +17,7 @@ public abstract class State {
 
     public abstract void onKeyPress(KeyEvent event);
 
-    public abstract void OnKeyRelease(KeyEvent event);
+    public abstract void onKeyRelease(KeyEvent event);
 
     public void setCurrentState(State newState) {
         GameMain.sGame.setCurrentState(newState);
