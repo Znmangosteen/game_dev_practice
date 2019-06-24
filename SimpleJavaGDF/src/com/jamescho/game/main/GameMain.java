@@ -17,7 +17,6 @@ public class GameMain {
         sGame = new Game(GAME_WIDTH, GAME_HEIGHT);
         frame.add(sGame);
         frame.pack();
-
         frame.setVisible(true);
     }
 }
